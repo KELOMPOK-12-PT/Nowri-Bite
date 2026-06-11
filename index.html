@@ -3,13 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOWRI-BITE</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Nowri-Bite | Practical, Delicious Meals</title>
 
+    <!-- Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <nav></nav>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="">
+                </a>
+
+                <ul class="nav-links" id="nav-links">
+                    <li>
+                        <a href="index.html" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="pages/menu.html">Menu</a>
+                    </li>
+                    <li>
+                        <a href="pages/about_us.html">About Us</a>
+                    </li>
+                </ul>
+
+                <button class="menu-toggle" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
     </header>
+
+    <!-- Main -->
+     <main>
+        <section class="hero-section">
+            <div class="container">
+
+                <div class="hero">
+                    <div class="hero-content">
+                    <h1>
+                        Practical, Delicious, and Affordable Meals
+                        for Your Busy Day
+                    </h1>
+
+                    <p>
+                        Your perfect companion for studying,
+                        working, and everyday activities.
+                        Grab a bite and keep going!
+                    </p>
+
+                    <a href="pages/menu.html" class="btn">
+                        View Menu
+                    </a>
+                    </div>
+
+                    <div class="hero-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Delicious Onigiri and Sushi">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-brief section-padding">
+            <div class="container">
+                <h2 class="section-title">
+                    Fueling Your Productivity
+                </h2>
+                <p>
+                    Nowri-Bite is dedicated to providing high-quality,
+                    ready-to-eat Japanese and Korean-inspired meals.
+                    Specifically crafted for busy students,
+                    college students, and office workers,
+                    our meals ensure you never have to compromise
+                    on taste or health, even on your most hectic days.
+                </p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-title">
+                    Why Choose Us?
+                </h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⏱️</div>
+                        <h3>Prectical</h3>
+                        <p>
+                            Easy to eat anywhere, anytime.
+                            Perfect for eating on the go or at your desk.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">😋</div>
+                        <h3>Delicious</h3>
+                        <p>
+                            Authentic flavors with a modern twist
+                            that will keep you coming back for more.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h3>Affordable</h3>
+                        <p>
+                            Student-friendly pricing without sacrificing
+                            portion size or ingredient quality.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">✨</div>
+                        <h3>Hygienic</h3>
+                        <p>
+                            Prepared in a clean environment and sealed
+                            securely for your safety and freshness.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cta-container">
+                    <a href="pages/menu.html" class="btn btn-outline">
+                        Explore Our Menu
+                    </a>
+                </div>
+            </div>
+
+        </section>
+     </main>
+
+     <!-- Footer -->
+      <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    Nowri-Bite
+                </div>
+
+                <div class="social-links">
+                    <div class="social-icon">IG</div>
+                    <div class="social-icon">WA</div>
+                    <div class="social-icon">EM</div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2026 Nowri-Bite.
+                All rights reserved.
+                Designed with ❤️ for busy people.
+            </div>
+        </div>
+      </footer>
+
+      <script src="js/main.js"></script>
 </body>
 </html>

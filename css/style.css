@@ -153,6 +153,13 @@ table {
   font-style: italic;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 /* HEADER */
 
 /* NAVBAR */
