@@ -192,81 +192,83 @@ ul {
   margin-top: 60px;
 }
 
-.menu-category {
-  margin-bottom: 40px;
-}
-
-.menu-category-title {
-  font-size: 1.5rem;
-  color: var(--primary);
-  margin-bottom: 24px;
-  border-bottom: 2px solid var(--bg-cream);
-  padding-bottom: 8px;
-  display: inline-block;
-}
-
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 32px;
-}
-
-.product-card {
+/* Footer */
+.about-wrapper {
   background-color: var(--bg-light);
-  border-radius: var(--radius-md);
-  overflow: hidden;
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
-  transition: var(--transition);
+  padding: 60px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.product-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-hover);
+.about-section {
+  margin-bottom: 48px;
 }
 
-.product-img-wrapper {
-  height: 220px;
-  overflow: hidden;
-  background-color: var(--bg-cream);
-}
-
-.product-img-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: var(--transition);
-}
-
-.product-card:hover .product-img-wrapper img {
-  transform: scale(1.05);
-}
-
-.product-info {
-  padding: 24px;
-}
-
-.product-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.product-desc {
-  color: var(--text-light);
-  font-size: 0.95rem;
+.about-section h2 {
+  color: var(--primary);
+  font-size: 1.8rem;
   margin-bottom: 16px;
 }
 
-.product-price {
-  font-weight: 700;
-  color: var(--primary);
-  font-size: 1.1rem;
+.about-section p,
+.about-section li {
+  color: var(--text-light);
+  font-size: 1.05rem;
+  margin-bottom: 12px;
 }
 
-.menu-footer-cta {
+.mission-list {
+  padding-left: 20px;
+}
+
+.mission-list li {
+  position: relative;
+  list-style-type: disc;
+  color: var(--text-light);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
   background-color: var(--bg-cream);
-  padding: 60px 24px;
-  border-radius: var(--radius-lg);
-  text-align: center;
-  margin-top: 60px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.contact-item:hover {
+  background-color: var(--primary);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.contact-item:hover p,
+.contact-item:hover span {
+  color: white;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contact-item p {
+  margin: 0;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.contact-item span {
+  font-size: 0.85rem;
+  color: var(--text-light);
 }
