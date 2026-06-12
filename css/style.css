@@ -482,3 +482,48 @@ footer {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.6);
 }
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 32px 24px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-light);
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0;
+    gap: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Hidden state */
+    transition: clip-path 0.3s ease-in-out;
+  }
+
+  .nav-links.nav-active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Visible state */
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .about-wrapper {
+    padding: 32px 24px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+}
